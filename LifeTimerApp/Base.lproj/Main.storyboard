@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bfU-QL-Njm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,170 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LifeTimerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ろうそく" translatesAutoresizingMaskIntoConstraints="NO" id="9F4-4w-hmh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-bi-Q0M">
+                                <rect key="frame" x="16" y="258.5" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l6J-S7-3qC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人生の残り時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp7-TR-846">
+                                <rect key="frame" x="15" y="112" width="345" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="MS5-83-eg6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あと、、" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-g5-9XE">
+                                <rect key="frame" x="20" y="156" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eDx-Hu-HMs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時秒" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmN-L7-00b">
+                                <rect key="frame" x="15" y="308.5" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XOa-hd-P6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eA-g5-9XE" secondAttribute="trailing" constant="20" id="3Ka-uU-Rdp"/>
+                            <constraint firstItem="GmN-L7-00b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3gq-2a-CNV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GmN-L7-00b" secondAttribute="trailing" constant="15" id="5JY-1o-NOD"/>
+                            <constraint firstItem="9F4-4w-hmh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Ea-BU-ojC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gp7-TR-846" secondAttribute="trailing" constant="15" id="BMy-TL-0y9"/>
+                            <constraint firstItem="9F4-4w-hmh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Cnk-AV-g1l"/>
+                            <constraint firstItem="tw9-bi-Q0M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EHF-nx-2kc"/>
+                            <constraint firstItem="1eA-g5-9XE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fm2-8q-Hxs"/>
+                            <constraint firstItem="gp7-TR-846" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFZ-t2-eG8"/>
+                            <constraint firstItem="9F4-4w-hmh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Noj-uw-8W7"/>
+                            <constraint firstItem="gp7-TR-846" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="Oaa-Z5-yqJ"/>
+                            <constraint firstItem="tw9-bi-Q0M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PwQ-mg-kN2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tw9-bi-Q0M" secondAttribute="trailing" constant="16" id="RmG-Se-rli"/>
+                            <constraint firstItem="1eA-g5-9XE" firstAttribute="top" secondItem="gp7-TR-846" secondAttribute="bottom" constant="8" id="Tvx-lh-wsl"/>
+                            <constraint firstItem="tw9-bi-Q0M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="YkM-e2-fuE"/>
+                            <constraint firstItem="GmN-L7-00b" firstAttribute="top" secondItem="tw9-bi-Q0M" secondAttribute="bottom" id="fCh-JV-ubm"/>
+                            <constraint firstItem="9F4-4w-hmh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wyc-GR-kGp"/>
+                            <constraint firstItem="gp7-TR-846" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="xNg-fF-E6I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lWO-wy-B6g">
+                        <barButtonItem key="backBarButtonItem" title="戻る" id="W5M-EJ-Pe8"/>
+                        <barButtonItem key="rightBarButtonItem" title="生年月日の設定" id="5zh-Jr-zNS">
+                            <connections>
+                                <segue destination="VmZ-W6-bfy" kind="show" id="oWt-dy-ckt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainLabel" destination="gp7-TR-846" id="PpF-mw-aKR"/>
+                        <outlet property="timeDisplay" destination="tw9-bi-Q0M" id="diZ-cv-sFV"/>
+                        <outlet property="timeDisplay2" destination="GmN-L7-00b" id="oyj-rk-hie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="712.79999999999995" y="456.52173913043481"/>
+        </scene>
+        <!--Set View Controller-->
+        <scene sceneID="Fqb-c5-Mjs">
+            <objects>
+                <viewController id="VmZ-W6-bfy" customClass="SetViewController" customModule="LifeTimerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pxQ-X8-sAk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生年月日を選択してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3C-xb-NEK">
+                                <rect key="frame" x="30" y="94" width="315" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ZFv-Xi-dWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rnk-0H-cry">
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="563520795.58629298">
+                                    <!--2018-11-10 05:33:15 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3y-Xc-kja">
+                                <rect key="frame" x="50" y="491.5" width="275" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="決定">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickerButton:" destination="VmZ-W6-bfy" eventType="touchUpInside" id="wLU-GP-fB9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e3C-xb-NEK" firstAttribute="top" secondItem="EWB-tI-D9U" secondAttribute="top" constant="30" id="KFJ-Zo-E9T"/>
+                            <constraint firstItem="Rnk-0H-cry" firstAttribute="centerY" secondItem="pxQ-X8-sAk" secondAttribute="centerY" id="RAQ-3H-vm5"/>
+                            <constraint firstItem="EWB-tI-D9U" firstAttribute="trailing" secondItem="H3y-Xc-kja" secondAttribute="trailing" constant="50" id="azL-Zv-yxd"/>
+                            <constraint firstItem="H3y-Xc-kja" firstAttribute="leading" secondItem="EWB-tI-D9U" secondAttribute="leading" constant="50" id="cHa-tn-dGg"/>
+                            <constraint firstItem="H3y-Xc-kja" firstAttribute="top" secondItem="Rnk-0H-cry" secondAttribute="bottom" constant="50" id="hFF-RD-dng"/>
+                            <constraint firstItem="Rnk-0H-cry" firstAttribute="centerX" secondItem="pxQ-X8-sAk" secondAttribute="centerX" id="tux-iC-j4P"/>
+                            <constraint firstItem="e3C-xb-NEK" firstAttribute="leading" secondItem="EWB-tI-D9U" secondAttribute="leading" constant="30" id="vDq-mY-mzt"/>
+                            <constraint firstItem="EWB-tI-D9U" firstAttribute="trailing" secondItem="e3C-xb-NEK" secondAttribute="trailing" constant="30" id="z1B-N8-Q1l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EWB-tI-D9U"/>
+                    </view>
+                    <connections>
+                        <outlet property="announceLabel" destination="e3C-xb-NEK" id="pes-P5-FKc"/>
+                        <outlet property="picker" destination="Rnk-0H-cry" id="a6i-bM-UfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRu-Ut-Ocu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="458"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TJ4-0z-X88">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfU-QL-Njm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1gb-bx-Tg8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G9k-5Q-QEA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AW-Xb-XK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="791.15442278860576"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ろうそく" width="660.05999755859375" height="990"/>
+    </resources>
 </document>

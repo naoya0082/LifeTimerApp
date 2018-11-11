@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87177FC219555E000225270 /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87177FB219555E000225270 /* SetViewController.swift */; };
 		D8ECF4832193FA910092421A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ECF4822193FA910092421A /* AppDelegate.swift */; };
 		D8ECF4852193FA910092421A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ECF4842193FA910092421A /* ViewController.swift */; };
 		D8ECF4882193FA910092421A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8ECF4862193FA910092421A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D87177FB219555E000225270 /* SetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		D8ECF47F2193FA910092421A /* LifeTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8ECF4822193FA910092421A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8ECF4842193FA910092421A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				D8ECF4822193FA910092421A /* AppDelegate.swift */,
 				D8ECF4842193FA910092421A /* ViewController.swift */,
+				D87177FB219555E000225270 /* SetViewController.swift */,
 				D8ECF4862193FA910092421A /* Main.storyboard */,
 				D8ECF4892193FA920092421A /* Assets.xcassets */,
 				D8ECF48B2193FA920092421A /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8ECF4852193FA910092421A /* ViewController.swift in Sources */,
+				D87177FC219555E000225270 /* SetViewController.swift in Sources */,
 				D8ECF4832193FA910092421A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KSQZ2J7X4T;
 				INFOPLIST_FILE = LifeTimerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KSQZ2J7X4T;
 				INFOPLIST_FILE = LifeTimerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
